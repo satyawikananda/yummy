@@ -41,10 +41,16 @@ console.log(await getListIngredient())
 
 ```
 
-And then use this command 
+How to run it ? 🤔
 
 ```
 deno run --allow-net ./example/index.ts
+```
+
+How to test it ? 🤔
+
+```
+deno test --allow-net ./test/test.ts
 ```
 
 ## Author
