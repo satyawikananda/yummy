@@ -1,4 +1,12 @@
-import {getRandomMeal, getCategories, getFilterByCat, getMainIngerdient} from "../mod.ts"
+import {
+    getRandomMeal, 
+    getCategories, 
+    getFilterByCat, 
+    getMainIngerdient,
+    getListArea,
+    getListCategories,
+    getListIngredient
+} from "../mod.ts"
 
 // Get data random meal
 console.log(await getRandomMeal())
@@ -11,3 +19,12 @@ console.log(await getFilterByCat("seafood"))
 
 // Get data recipe 
 console.log(await getMainIngerdient("chicken_breast"))
+
+// Get data list available area
+console.log(await getListArea())
+
+// Get data list available category
+console.log(await getListCategories())
+
+// Get  data list available ingredient
+console.log(await getListIngredient())

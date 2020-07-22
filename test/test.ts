@@ -2,7 +2,10 @@ import {
     getRandomMeal, 
     getCategories, 
     getFilterByCat, 
-    getMainIngerdient
+    getMainIngerdient,
+    getListIngredient,
+    getListCategories,
+    getListArea
 } from "../mod.ts"
 
 import {equal} from "https://deno.land/std/testing/asserts.ts"
@@ -25,4 +28,19 @@ Deno.test("getFilterCat", async () => {
 Deno.test("getMainIngerdient", async () => {
     const getIngredient:any = await getMainIngerdient("chicken_breast")
     equal(Array.isArray(getIngredient), true)
+})
+
+Deno.test("getListIngredient", async () => {
+    const getListIng:any = await getListIngredient()
+    equal(Array.isArray(getListIng), true)
+})
+
+Deno.test("getListArea", async () => {
+    const getDataListArea:any = await getListArea()
+    equal(Array.isArray(getDataListArea), true)
+})
+
+Deno.test("getListCategories", async () => {
+    const getListCat:any = await getListCategories()
+    equal(Array.isArray(getListCat), true)
 })
