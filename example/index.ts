@@ -6,7 +6,7 @@ import {
     getListArea,
     getListCategories,
     getListIngredient
-} from "../mod.ts"
+} from "https://raw.githubusercontent.com/satyawikananda/yummy/master/mod.ts"
 
 // Get data random meal
 console.log(await getRandomMeal())
